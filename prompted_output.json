@@ -1,0 +1,329 @@
+{
+  "coding_problem_solving_system": {
+    "overview": "A structured approach to tackle any coding problem systematically, from debugging to feature development to architectural challenges",
+    
+    "phases": [
+      {
+        "phase": 1,
+        "name": "Problem Understanding & Analysis",
+        "focus": "Clarity and comprehension before any code is written",
+        "steps": [
+          {
+            "step": "1.1",
+            "action": "Define the problem statement",
+            "details": "Write out what you're trying to solve in plain English. If it's a bug, describe the expected vs actual behavior. If it's a feature, describe the requirements.",
+            "questions_to_ask": [
+              "What exactly needs to be accomplished?",
+              "What are the inputs and expected outputs?",
+              "What are the constraints or limitations?",
+              "Who is the end user and what's their context?"
+            ]
+          },
+          {
+            "step": "1.2", 
+            "action": "Gather requirements and context",
+            "details": "Collect all relevant information about the system, existing codebase, dependencies, and environment",
+            "questions_to_ask": [
+              "What existing code/systems does this interact with?",
+              "What are the performance requirements?",
+              "What are the security considerations?",
+              "What's the timeline and scope?"
+            ]
+          },
+          {
+            "step": "1.3",
+            "action": "Identify success criteria",
+            "details": "Define what 'done' looks like with specific, measurable outcomes",
+            "deliverable": "Clear acceptance criteria or definition of done"
+          }
+        ]
+      },
+      
+      {
+        "phase": 2,
+        "name": "Problem Decomposition & Planning",
+        "focus": "Breaking complex problems into manageable pieces",
+        "steps": [
+          {
+            "step": "2.1",
+            "action": "Break down the problem",
+            "details": "Divide the main problem into smaller, independent sub-problems or components",
+            "techniques": [
+              "Draw system diagrams or flowcharts",
+              "List out major components or modules",
+              "Identify data flow and dependencies",
+              "Separate concerns (UI, business logic, data, etc.)"
+            ]
+          },
+          {
+            "step": "2.2",
+            "action": "Prioritize and sequence",
+            "details": "Determine the order of implementation based on dependencies and risk",
+            "considerations": [
+              "What has the highest impact/lowest effort?",
+              "What are the critical path dependencies?",
+              "What has the highest risk or uncertainty?",
+              "What can be developed in parallel?"
+            ]
+          },
+          {
+            "step": "2.3",
+            "action": "Choose architecture and approach",
+            "details": "Select appropriate patterns, technologies, and overall strategy",
+            "factors": [
+              "Scalability requirements",
+              "Maintainability needs", 
+              "Team expertise",
+              "Existing system constraints",
+              "Time and resource limitations"
+            ]
+          }
+        ]
+      },
+      
+      {
+        "phase": 3,
+        "name": "Solution Design",
+        "focus": "Detailed planning before implementation",
+        "steps": [
+          {
+            "step": "3.1",
+            "action": "Design data structures and interfaces",
+            "details": "Define the shape of data, APIs, and contracts between components",
+            "outputs": [
+              "Data models or schemas",
+              "Function signatures",
+              "API endpoints",
+              "Component interfaces"
+            ]
+          },
+          {
+            "step": "3.2",
+            "action": "Plan error handling and edge cases",
+            "details": "Anticipate what can go wrong and how to handle it gracefully",
+            "considerations": [
+              "Invalid inputs",
+              "Network failures",
+              "Resource constraints",
+              "Concurrent access issues",
+              "Backward compatibility"
+            ]
+          },
+          {
+            "step": "3.3",
+            "action": "Design testing strategy",
+            "details": "Plan how you'll verify the solution works correctly",
+            "test_types": [
+              "Unit tests for individual functions",
+              "Integration tests for component interactions",
+              "End-to-end tests for user workflows",
+              "Performance tests for scalability",
+              "Security tests for vulnerabilities"
+            ]
+          }
+        ]
+      },
+      
+      {
+        "phase": 4,
+        "name": "Implementation",
+        "focus": "Writing code systematically and iteratively",
+        "steps": [
+          {
+            "step": "4.1",
+            "action": "Start with a minimal viable solution",
+            "details": "Implement the simplest version that demonstrates core functionality",
+            "benefits": [
+              "Early validation of approach",
+              "Quick feedback loop",
+              "Reduced risk of over-engineering",
+              "Foundation for iteration"
+            ]
+          },
+          {
+            "step": "4.2",
+            "action": "Implement incrementally",
+            "details": "Add features one at a time, testing each addition",
+            "approach": [
+              "Pick the highest priority item from your plan",
+              "Implement just that feature",
+              "Test thoroughly before moving on",
+              "Refactor if needed before adding complexity"
+            ]
+          },
+          {
+            "step": "4.3",
+            "action": "Follow coding best practices",
+            "details": "Write clean, maintainable code that others can understand",
+            "practices": [
+              "Use meaningful variable and function names",
+              "Keep functions small and focused",
+              "Add comments for complex logic",
+              "Follow consistent formatting",
+              "Handle errors appropriately"
+            ]
+          }
+        ]
+      },
+      
+      {
+        "phase": 5,
+        "name": "Testing & Validation",
+        "focus": "Ensuring the solution works correctly and completely",
+        "steps": [
+          {
+            "step": "5.1",
+            "action": "Test each component individually",
+            "details": "Verify that individual functions and modules work as expected",
+            "methods": [
+              "Write unit tests",
+              "Test with various inputs",
+              "Verify edge cases",
+              "Check error conditions"
+            ]
+          },
+          {
+            "step": "5.2", 
+            "action": "Test system integration",
+            "details": "Ensure all components work together correctly",
+            "focus_areas": [
+              "Data flow between components",
+              "API contract compliance",
+              "Performance under load",
+              "Concurrent usage scenarios"
+            ]
+          },
+          {
+            "step": "5.3",
+            "action": "Validate against original requirements",
+            "details": "Confirm the solution meets all success criteria from Phase 1",
+            "verification": [
+              "Test all specified use cases",
+              "Verify performance requirements",
+              "Check security requirements",
+              "Validate user experience"
+            ]
+          }
+        ]
+      },
+      
+      {
+        "phase": 6,
+        "name": "Review & Refinement", 
+        "focus": "Improving code quality and preparing for production",
+        "steps": [
+          {
+            "step": "6.1",
+            "action": "Code review and refactoring",
+            "details": "Improve code quality, readability, and maintainability",
+            "review_checklist": [
+              "Is the code easy to understand?",
+              "Are there any code smells or anti-patterns?",
+              "Is error handling comprehensive?",
+              "Are there opportunities for reuse?",
+              "Is the code properly documented?"
+            ]
+          },
+          {
+            "step": "6.2",
+            "action": "Performance optimization",
+            "details": "Identify and address performance bottlenecks if needed",
+            "areas_to_check": [
+              "Algorithm efficiency",
+              "Database query performance", 
+              "Memory usage",
+              "Network requests",
+              "Caching opportunities"
+            ]
+          },
+          {
+            "step": "6.3",
+            "action": "Documentation and knowledge transfer",
+            "details": "Document the solution for future maintenance and team knowledge",
+            "documentation_types": [
+              "Code comments and docstrings",
+              "Architecture overview",
+              "Deployment instructions",
+              "Troubleshooting guide",
+              "Decision rationale"
+            ]
+          }
+        ]
+      }
+    ],
+    
+    "cross_cutting_principles": {
+      "iterative_approach": "Expect to cycle through phases multiple times as understanding deepens",
+      "fail_fast": "Identify problems early through testing and validation",
+      "communicate_early": "Share progress and get feedback from stakeholders regularly",
+      "document_decisions": "Record why certain choices were made for future reference",
+      "measure_progress": "Use concrete metrics to track advancement toward goals"
+    },
+    
+    "problem_specific_adaptations": {
+      "debugging_existing_code": {
+        "phase_emphasis": "Focus heavily on Phase 1 (understanding) and Phase 5 (testing)",
+        "additional_steps": [
+          "Reproduce the issue consistently",
+          "Isolate the problem area",
+          "Use debugging tools and logging",
+          "Verify the fix doesn't break other functionality"
+        ]
+      },
+      "new_feature_development": {
+        "phase_emphasis": "Equal weight on all phases, strong focus on Phase 2 (planning)",
+        "additional_considerations": [
+          "Impact on existing users",
+          "Feature flag strategy",
+          "Rollback plans",
+          "Monitoring and analytics"
+        ]
+      },
+      "system_architecture": {
+        "phase_emphasis": "Extended time in Phase 2 (decomposition) and Phase 3 (design)",
+        "additional_focus": [
+          "Scalability patterns",
+          "Service boundaries",
+          "Data consistency",
+          "Operational concerns"
+        ]
+      },
+      "performance_optimization": {
+        "phase_emphasis": "Heavy focus on Phase 1 (analysis) and Phase 6 (refinement)",
+        "key_activities": [
+          "Profiling and measurement",
+          "Bottleneck identification",
+          "Benchmarking improvements",
+          "Regression testing"
+        ]
+      }
+    },
+    
+    "tools_and_techniques": {
+      "problem_understanding": [
+        "User story mapping",
+        "Requirements gathering templates",
+        "Stakeholder interviews",
+        "System documentation review"
+      ],
+      "design_and_planning": [
+        "Whiteboards and diagramming tools",
+        "Architecture decision records",
+        "Technical spike investigations", 
+        "Proof of concept development"
+      ],
+      "implementation": [
+        "Version control best practices",
+        "Code review processes",
+        "Continuous integration",
+        "Feature flags and gradual rollouts"
+      ],
+      "testing": [
+        "Test-driven development",
+        "Automated testing frameworks",
+        "Load testing tools",
+        "Monitoring and observability"
+      ]
+    }
+  }
+}
